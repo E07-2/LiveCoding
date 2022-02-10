@@ -1,0 +1,28 @@
+div {
+    margin: 0.25em auto;
+    border: 1px solid black;
+    padding: 0.25em;
+    width: 20em;
+}
+
+div.nested {
+    background-color: #ccc;
+    width: fit-content;
+    padding: 0.25em 1em;
+    font-size: 0.75em;
+}
+
+div.nested button {
+    margin: auto;
+    width: 7em;
+    display: block;
+    background-color: #ccc;
+    color:#000;
+    border: 2px outset #888;
+}
+
+div.nested button.toggled {
+    background-color: #666;
+    color:#fff;
+    border-style: inset;
+}
