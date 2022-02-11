@@ -1,0 +1,112 @@
+:root {
+  --bodyMargin: 0em;
+  --boardSize: calc(100vmin - (2 * var(--bodyMargin)));
+  --boardSquare: calc(var(--boardSize) / 8);
+  --gameTop: calc(50vh - var(--boardSize) / 2);
+  --gameLeft: calc(50vw - var(--boardSize) / 2)
+}
+
+body {
+  margin: var(--bodyMargin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#game {
+  position: absolute;
+  left: var(--gameLeft);
+  top: var(--gameTop);
+  width: var(--boardSize);
+  height: var(--boardSize);
+}
+
+#board {
+  width: 100%;
+}
+
+.piece {
+  position: absolute;
+  top: var(--boardSquare);
+  left: var(--boardSquare);
+  height: var(--boardSquare);
+}
+
+.dragging {
+  z-index: 1;
+}
+
+.c-a {
+  left: 0; 
+}
+
+.c-b {
+  left: var(--boardSquare); 
+}
+
+.c-c {
+  left: calc(2 * var(--boardSquare)); 
+}
+
+.c-d {
+  left: calc(3 * var(--boardSquare)); 
+}
+
+.c-e {
+  left: calc(4 * var(--boardSquare)); 
+}
+
+.c-f {
+  left: calc(5 * var(--boardSquare)); 
+}
+
+.c-g {
+  left: calc(6 * var(--boardSquare)); 
+}
+
+.c-h {
+  left: calc(7 * var(--boardSquare)); 
+}
+
+.r-1 {
+  top: calc(7 * var(--boardSquare));
+}
+
+.r-2 {
+  top: calc(6 * var(--boardSquare));
+}
+
+.r-3 {
+  top: calc(5 * var(--boardSquare));
+}
+
+.r-4 {
+  top: calc(4 * var(--boardSquare));
+}
+
+.r-5 {
+  top: calc(3 * var(--boardSquare));
+}
+
+.r-6 {
+  top: calc(2 * var(--boardSquare));
+}
+
+.r-7 {
+  top: var(--boardSquare);
+}
+
+.r-8 {
+  top: 0;
+}
+
+h1 {
+  font-size: 18vmin;
+  width: 70vmin;
+  text-align: center;
+  margin: 0;
+  color: #ff000044;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
